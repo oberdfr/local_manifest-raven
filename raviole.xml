@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="vortex"
+          fetch="https://github.com/oberdfr"
+          revision="Unison" />
+
+<remote name="vendor"
+    fetch="ssh://git@bitbucket.org:vortexaosp"
+    revision="refs/heads/Unison" />
+
+<remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+<default revision="refs/tags/android-14.0.0_r25"
+           remote="aosp"
+           sync-j="4" />
+
+  <!--Device tree-->
+  <project path="device/google/gs-common" name="device/google/gs-common" groups="device,slider,bluejay,cloudripper,pdk-gs-arm" />
+  
+  <project path="device/google/gs101" name="device/google/gs101" groups="device,slider,bluejay,pdk-gs-arm" />
+  <project path="device/google/gs101-sepolicy" name="device/google/gs101-sepolicy" groups="device,slider,bluejay,pdk-gs-arm" />
+  <project path="device/google/raviole" name="device/google/raviole" groups="device,slider,pdk-gs-arm" />
+
+  <!-- Vendor -->
+  <project name="vendor_google_raven" path="vendor/google_devices/raven" remote="vendor"/>
+  
+  <!-- Kernel -->
+  <project path="device/google/raviole-kernel" name="device/google/raviole-kernel" groups="device,slider,pdk-gs-arm" clone-depth="1" />
+
+</manifest>
