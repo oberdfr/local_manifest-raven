@@ -6,7 +6,7 @@
           revision="Unison" />
 
 <remote name="vendor"
-    fetch="ssh://git@bitbucket.org:vortexaosp"
+    fetch="https://oberdfr@bitbucket.org/vortexaosp/"
     revision="refs/heads/Unison" />
 
 <remote  name="aosp"
