@@ -15,7 +15,7 @@
 <default revision="refs/tags/android-14.0.0_r25"
            remote="aosp"
            sync-j="4" />
-
+          
   <!--Device tree-->
   <project path="device/google/gs-common" name="device/google/gs-common" groups="device,slider,bluejay,cloudripper,pdk-gs-arm" />
   
@@ -24,7 +24,7 @@
   <project path="device/google/raviole" name="device_google_raviole" remote="vortex" />
 
   <!-- Vendor -->
-  <!--<project name="vendor_google_raven" path="vendor/google_devices/raven" remote="vendor"/>-->
+  <project name="vendor_google_raven" path="vendor/google_devices/raven" remote="vendor"/>
   
   <!-- Kernel -->
   <project path="device/google/raviole-kernel" name="device/google/raviole-kernel" groups="device,slider,pdk-gs-arm" clone-depth="1" />
